@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/persona"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:layout_centerInParent="true"
+        />
+       <Spinner
+           android:id="@+id/cursos"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/name"
+           android:entries="@array/nivelEducativo"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_below="@+id/cursos">
+        <Button
+            android:id="@+id/frame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Frame" />
+        <Button
+            android:id="@+id/Bweb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Web" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista"
+        android:layout_below="@id/linear"
+        />
+
+</RelativeLayout>
